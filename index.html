@@ -5,55 +5,83 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Beauty Buffet</title>
+  <!-- CSS -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Sunshiney&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="css/all.css">
+  <!-- <script src="https://kit.fontawesome.com/d82f5620dd.js" crossorigin="anonymous"></script> -->
 </head>
 <body>
-  <div class="container">
-    <div class="header">
+  <div class="header">
+    <div class="container">
       <div class="row justify-content-between align-items-center">
-        <div class="col-md-auto">
-          <div class="header_logo">
-            <h1 class="header__title">Beauty Buffet</h1>
+          <div class="col">
+            <div class="header_logo">
+              <a class="header__title" href="#">Beauty Buffet</a>
+            </div>
           </div>
-        </div>
-        <!-- /.col-md-auto -->
-        <div class="col-md-auto">
-          <div class="header_contacts">
-            <a href="#">+7 (919) 123-45-67</a>
-            <p>Ежедневно 9-21</p>
+          <!-- /.col -->
+          <div class="col d-none d-md-flex justify-content-center">
+            <div class="header_contacts">
+              <a class="header_contacts__phone" href="tel:+79191234567">+7 (919) 123-45-67</a>
+              <p class="header_contacts__time">Ежедневно 9-21</p>
+            </div>
+            <!-- /.header_contacts -->
           </div>
-          <!-- /.header_contacts -->
-        </div>
-        <!-- /.col-md-auto -->
-        <div class="col-md-auto">
-          <div class="header_socials">
-            <a href="#">VK</a>
-            <a href="#">Instagram</a>
+          <!-- /.colo -->
+          <div class="col d-none d-md-flex justify-content-end">
+            <div class="header_socials">
+              <a href="#"><i class="fab fa-vk"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <!-- /.header_socials -->
           </div>
-          <!-- /.header_socials -->
-        </div>
-        <!-- /.col-md-auto -->
-        <div class="col-md-auto">
-          <div class="header_bars">
-            <img src="img/burger-menu.svg" alt="">
+          <!-- /.col-sm-auto -->
+          <div class="col-auto d-flex d-md-none justify-content-end">
+            <div class="header_bars">
+              <a href="#"><i class="fas fa-bars"></i></a>
+            </div>
+            <!-- /.burger-menu -->
           </div>
-          <!-- /.burger-menu -->
+          <!-- /.col-sm-auto -->
         </div>
-        <!-- /.col-md-auto -->
+        <!-- /.row -->
       </div>
-      <!-- /.row -->
-    </div>
-    <!-- /.header -->
-    <div class="nav-menu">
-      <div class="row">
-
-      </div>
-      <!-- /.row -->
-    </div>
-    <!-- /.nav-menu -->
+      <!-- /.container -->
   </div>
-  <!-- /.container -->
+  <!-- /.header -->
+  <div class="nav d-none d-md-block">
+    <div class="container-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <ul class="nav-menu">
+              <li><a href="">Декоративная косметика</a>
+                <ul>
+                  <li><a href="">Губы</a></li>
+                  <li><a href="">Глаза</a></li>
+                  <li><a href="">Брови</a></li>
+                  <li><a href="">Лицо</a></li>
+                </ul>
+              </li>
+              <li><a href="">Уходовая косметика</a></li>
+              <li><a href="">Контакты</a></li>
+            </ul>
+            <!-- /.nav-menu -->
+          </div>
+          <!-- /.col-12 -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.container-fluid -->
+  </div>
+  <!-- /.nav -->
   <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
   <script src="js/main.js"></script>
 </body>

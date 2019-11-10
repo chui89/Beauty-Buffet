@@ -1,20 +1,84 @@
+@import 'colors'
+
 *
   margin: 0
   padding: 0
 
+body
+  font-family: 'Roboto', sans-serif
+  position: relative
+
 a
-    text-decoration: none
+  text-decoration: none
 
 .header
   margin-top: 30px
+  font-family: 'Roboto Condensed', sans-serif
   &_logo
   &__title
-    text-transform: uppercase
+    font-family: 'Sunshiney', cursive
+    font-size: 34px
+    color: $main-color
   &_contacts
+    text-align: center
+    &__phone
+      display: block
+      font-size: 18px
+      margin-bottom: 5px
+      // padding-bottom: 5px
+      color: #000
+      &:after
+        margin-top: 5px
+        display: block
+        content: ''
+        width: 100%
+        height: 2px
+        background-color: $main-color
+    &__time
+      font-style: italic
+      font-size: 14px
+      color: $grey
   &_socials
-    display: flex
-    flex-direction: column
+    a
+      font-size: 28px
+      margin-left: 20px
+      color: $main-color
+
   &_bars
-    img
-      width: 30px
-      height: 30px
+    a
+      font-size: 34px
+      color: #000000
+
+.nav
+  margin-top: 30px
+  background-color: $main-color
+  &-active
+    display: flex !important
+  &-menu
+    list-style: none
+    display: flex
+    justify-content: center
+    li
+      padding: 20px 0
+      transition: 0.3s
+      &:hover
+        background-color: darken($main-color, 20%)
+      &:hover > ul
+        transform: translateY(0)
+        opacity: 1
+      a
+        padding: 20px
+        text-transform: uppercase
+        color: snow
+      ul
+        z-index: -1
+        display: flex
+        background-color: $main-color
+        position: absolute
+        margin-top: 20px
+        list-style: none
+        transform: translateY(-100%)
+        transition: 0.3s
+        opacity: 0
+
+@import 'media'

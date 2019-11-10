@@ -1,0 +1,25 @@
+@media (max-width: 767px)
+  .nav
+    position: absolute
+    right: 0
+    &-menu
+      display: block
+      // flex-direction: column
+      li
+        padding: 10px 0
+        position: relative
+        &:hover > ul
+          display: flex
+          transform: translateY(0)
+        a
+          padding: 10px
+        ul
+          display: none
+          position: relative
+          // margin: 0
+          // padding: 0
+          z-index: 2
+          opacity: 1
+          transform: translateY(-100%)
+          li
+            // padding: 10px
