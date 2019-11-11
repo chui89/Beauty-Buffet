@@ -82,7 +82,7 @@ a {
 }
 
 .nav-menu li {
-  padding: 20px 0;
+  padding: 10px 0;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -98,7 +98,7 @@ a {
 }
 
 .nav-menu li a {
-  padding: 20px;
+  padding: 10px 20px;
   text-transform: uppercase;
   color: snow;
 }
@@ -110,7 +110,7 @@ a {
   display: flex;
   background-color: #62db9e;
   position: absolute;
-  margin-top: 20px;
+  margin-top: 10px;
   list-style: none;
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
@@ -120,34 +120,90 @@ a {
 }
 
 @media (max-width: 767px) {
+  .header_bars a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: #62db9e;
+  }
+  .header_bars a .fa-bars {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .header_bars a .fa-bars-change {
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    display: none;
+    opacity: 0;
+  }
+  .header_bars a .fa-window-close {
+    display: none;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .header_bars a .fa-window-close-change {
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    opacity: 1;
+  }
   .nav {
+    overflow-x: hidden;
+    margin-top: 10px;
     position: absolute;
     right: 0;
+    -webkit-transform: translateX(100%) scalex(0);
+            transform: translateX(100%) scalex(0);
+    opacity: 0;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+  .nav .container, .nav .container-fluid {
+    margin: 0;
+    padding: 0;
   }
   .nav-menu {
     display: block;
   }
+  .nav-menu_active {
+    -webkit-transform: translateX(0) scaleX(1);
+            transform: translateX(0) scaleX(1);
+    opacity: 1;
+  }
   .nav-menu li {
-    padding: 10px 0;
+    padding: 0;
     position: relative;
   }
   .nav-menu li:hover > ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #28af6b;
   }
   .nav-menu li a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     padding: 10px;
   }
   .nav-menu li ul {
     display: none;
     position: relative;
     z-index: 2;
-    opacity: 1;
-    -webkit-transform: translateY(-100%);
-            transform: translateY(-100%);
+    margin-top: 0;
+    padding-left: 10px;
+  }
+  .nav-menu li ul li {
+    padding: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
