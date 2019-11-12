@@ -1,28 +1,30 @@
 @media (max-width: 767px)
-  .header_bars
-    a
-      display: flex
-      color: $main-color
-      .fa-bars
+  .header
+    margin-top: 10px
+    &_bars
+      a
         display: flex
-        transition: 0.3s
-        &-change
-          transition: 0.3s
-          display: none
-          opacity: 0
-      .fa-window-close
-        display: none
-        transition: 0.3s
-        &-change
-          transition: 0.3s
+        color: $main-color
+        .fa-bars
           display: flex
-          opacity: 1
+          transition: 0.3s
+          &-change
+            transition: 0.3s
+            display: none
+            opacity: 0
+        .fa-window-close
+          display: none
+          transition: 0.3s
+          &-change
+            transition: 0.3s
+            display: flex
+            opacity: 1
   .nav
-    overflow-x: hidden
+    // overflow-x: hidden
     margin-top: 10px
     position: absolute
     right: 0
-    transform: translateX(100%) scalex(0)
+    transform: translateX(100%) scaleX(0)
     opacity: 0
     transition: 0.4s
     .container, .container-fluid
