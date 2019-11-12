@@ -3,6 +3,7 @@
 *
   margin: 0
   padding: 0
+  outline: none
 
 body
   font-family: 'Roboto', sans-serif
@@ -10,6 +11,11 @@ body
 
 a
   text-decoration: none
+
+.section
+  margin-top: 40px
+  &_title
+    margin-bottom: 20px
 
 .header
   margin-top: 30px
@@ -65,20 +71,69 @@ a
         background-color: darken($main-color, 20%)
       &:hover > ul
         transform: translateY(0)
-        opacity: 1
+        // opacity: 1
+        z-index: 0
+        display: flex
       a
         padding: 10px 20px
         text-transform: uppercase
         color: snow
       ul
         z-index: -1
-        display: flex
+        display: none
         background-color: $main-color
         position: absolute
         margin-top: 10px
         list-style: none
         transform: translateY(-100%)
         transition: 0.3s
-        opacity: 0
+        // opacity: 0
+
+.stocks
+
+.slider
+  position: relative !important
+  &_item
+    // border: 1px solid grey
+    outline: none
+    &__info
+      padding: 30px
+    &__img
+      display: flex
+      justify-content: flex-end
+      img
+        max-width: 100%
+        background: url('../img/1.jpg') no-repeat center top
+        background-size: contain
+    &__link
+      display: inline-block
+    &__title
+      text-transform: uppercase
+      margin-bottom: 30px
+    &__text
+      margin-bottom: 30px
+  &-dots
+    position: absolute !important
+    bottom: 20px
+    left: 20px
+    list-style: none
+    display: flex
+    li
+      button
+        cursor: pointer
+        width: 15px
+        height: 15px
+        border-radius: 50%
+        margin-right: 20px
+        border: none
+        background-color: $main-color
+        color: $main-color
+        transition: 0.3s
+        &:hover
+          background-color: darken($main-color, 20%)
+          color: darken($main-color, 20%)
+        &[aria-selected='true']
+          background-color: darken($main-color, 70%)
+          color: darken($main-color, 70%)
 
 @import 'media'

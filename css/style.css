@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  outline: none;
 }
 
 body {
@@ -10,6 +11,14 @@ body {
 
 a {
   text-decoration: none;
+}
+
+.section {
+  margin-top: 40px;
+}
+
+.section_title {
+  margin-bottom: 20px;
 }
 
 .header {
@@ -94,7 +103,10 @@ a {
 .nav-menu li:hover > ul {
   -webkit-transform: translateY(0);
           transform: translateY(0);
-  opacity: 1;
+  z-index: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .nav-menu li a {
@@ -105,9 +117,7 @@ a {
 
 .nav-menu li ul {
   z-index: -1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   background-color: #62db9e;
   position: absolute;
   margin-top: 10px;
@@ -116,7 +126,79 @@ a {
           transform: translateY(-100%);
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  opacity: 0;
+}
+
+.slider {
+  position: relative !important;
+}
+
+.slider_item {
+  outline: none;
+}
+
+.slider_item__info {
+  padding: 30px;
+}
+
+.slider_item__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.slider_item__img img {
+  max-width: 100%;
+  background: url("../img/1.jpg") no-repeat center top;
+  background-size: contain;
+}
+
+.slider_item__link {
+  display: inline-block;
+}
+
+.slider_item__title {
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.slider_item__text {
+  margin-bottom: 30px;
+}
+
+.slider-dots {
+  position: absolute !important;
+  bottom: 20px;
+  left: 20px;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.slider-dots li button {
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-right: 20px;
+  border: none;
+  background-color: #62db9e;
+  color: #62db9e;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.slider-dots li button:hover {
+  background-color: #28af6b;
+  color: #28af6b;
+}
+
+.slider-dots li button[aria-selected='true'] {
+  background-color: black;
+  color: black;
 }
 
 @media (max-width: 767px) {
@@ -156,6 +238,7 @@ a {
     opacity: 1;
   }
   .nav {
+    z-index: 99;
     margin-top: 10px;
     position: absolute;
     right: 0;
@@ -203,5 +286,9 @@ a {
   .nav-menu li ul li {
     padding: 0;
   }
+}
+
+.slider_item__info {
+  padding: 10px;
 }
 /*# sourceMappingURL=style.css.map */
