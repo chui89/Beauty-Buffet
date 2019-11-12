@@ -20,11 +20,9 @@
             display: flex
             opacity: 1
   .nav
-    // overflow-x: hidden
     margin-top: 10px
     position: absolute
     right: 0
-    transform: translateX(100%) scaleX(0)
     opacity: 0
     transition: 0.4s
     .container, .container-fluid
@@ -33,7 +31,6 @@
     &-menu
       display: block
       &_active
-          transform: translateX(0) scaleX(1)
           opacity: 1
       li
         padding: 0
@@ -41,20 +38,14 @@
         &:hover > ul
           display: flex
           flex-direction: column
-          // transform: translateY(0)
-          // transition: 1s
           background-color: darken($main-color, 20%)
         a
           display: flex
-          // width: 100%
           padding: 10px
         ul
           display: none
           position: relative
           z-index: 2
-          // opacity: 1
-          // transform: translateY(-100%)
-          // transition: 1s
           margin-top: 0
           padding-left: 10px
           li
