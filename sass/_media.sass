@@ -42,13 +42,15 @@
         padding: 0
         position: relative
         &:hover > ul
-          background-color: darken($main-color, 20%)
+          background-color: $main-color-d
           transform: scaleY(1)
           transition: 0.3s
           flex-direction: column
         a
           display: flex
           padding: 10px
+          color: #fff
+          font-size: 16px
         ul
           display: none
           transform: scaleY(0)
@@ -65,7 +67,6 @@
     &_item
       &__info
         padding: 10px
-      &__img
       &__title
         margin-bottom: 10px
       &__text

@@ -18,10 +18,14 @@ a
   text-decoration: none
   font-family: 'Futura PT Demi', sans-serif
 
+.content
+
+
 .section
   margin-top: 40px
   &_title
     margin-bottom: 20px
+    color: $section-title
 
 .header
   margin-top: 30px
@@ -31,13 +35,18 @@ a
     font-family: 'Sunshiney', cursive
     font-size: 34px
     color: $main-color
+    transition: 0.3s
+    &:hover
+      color: $main-color-d
+  &__subtitle
+    font-style: italic
   &_contacts
     text-align: center
     &__phone
       display: block
       font-size: 20px
       margin-bottom: 5px
-      color: #000
+      color: $section-title
       &:after
         margin-top: 5px
         display: block
@@ -48,13 +57,24 @@ a
     &__time
       font-style: italic
       font-size: 18px
-      color: $grey
+      color: $link-color
       font-family: 'Futura PT Book', sans-serif
   &_socials
+    display: flex
+    flex-direction: column
+    align-items: flex-start
     a
-      font-size: 28px
+      font-size: 14px
       margin-left: 20px
-      color: $main-color
+      color: $link-color
+      transition: 0.3s
+      &:hover
+        color: $main-color-d
+      i
+        color: $main-color
+        margin-right: 10px
+        font-size: 28px
+
 
   &_bars
     a
@@ -76,7 +96,7 @@ a
       padding: 10px 0
       transition: 0.3s
       &:hover
-        background-color: darken($main-color, 20%)
+        background-color: $main-color-d
       &:hover > ul
         transform: translateY(0)
         z-index: 0
@@ -113,13 +133,25 @@ a
         background: url('../img/1.jpg') no-repeat center top
         background-size: contain
     &__title
+      display: inline-block
+      padding: 0 5px
       text-transform: uppercase
       margin-bottom: 30px
+      background-color: $main-color
+      color: #fff
+      font-size: 1.5rem
     &__text
       margin-bottom: 30px
+      font-size: 18px
     &__link
       display: inline-block
       margin-bottom: 20px
+      color: $main-color-d
+      padding: 10px
+      border: 1px solid $main-color-d
+      transition: 0.3s
+      &:hover
+        box-shadow: 0 0 10px $main-color-l
   &-dots
     position: absolute
     bottom: 20px
@@ -139,10 +171,10 @@ a
         color: $main-color
         transition: 0.3s
         &:hover
-          background-color: darken($main-color, 20%)
-          color: darken($main-color, 20%)
+          background-color: $main-color-l
+          color: $main-color-l
         &[aria-selected='true']
-          background-color: darken($main-color, 70%)
-          color: darken($main-color, 70%)
+          background-color: $main-color-d
+          color: $main-color-d
 
 @import 'media'
