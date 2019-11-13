@@ -1,4 +1,6 @@
 @media (max-width: 767px)
+  .section
+    margin-top: 20px
   .header
     margin-top: 10px
     &_bars
@@ -25,7 +27,9 @@
     position: absolute
     right: 0
     opacity: 0
-    transition: 0.4s
+    transform: scaleX(0)
+    transform-origin: right center 0
+    transition: 0.3s
     .container, .container-fluid
       margin: 0
       padding: 0
@@ -33,26 +37,45 @@
       display: block
       &_active
           opacity: 1
+          transform: scaleX(1)
       li
         padding: 0
         position: relative
         &:hover > ul
-          display: flex
-          flex-direction: column
           background-color: darken($main-color, 20%)
+          transform: scaleY(1)
+          transition: 0.3s
+          flex-direction: column
         a
           display: flex
           padding: 10px
         ul
           display: none
+          transform: scaleY(0)
+          transform-origin: top center 0
+          transition: 0.3s
           position: relative
           z-index: 2
           margin-top: 0
           padding-left: 10px
           li
             padding: 0
-
-.slider
-  &_item
-    &__info
-      padding: 10px
+  .slider
+    position: relative
+    &_item
+      &__info
+        padding: 10px
+      &__img
+      &__title
+        margin-bottom: 10px
+      &__text
+        margin-bottom: 10px
+    &-dots
+      top: -20px
+      left: 50%
+      transform: translateX(-50%)
+      li
+        button
+          font-size: 1px
+          width: 10px
+          height: 10px
