@@ -352,6 +352,7 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    z-index: 20;
   }
   .nav-menu li {
     padding: 0;
@@ -361,9 +362,11 @@ a {
   }
   .nav-menu li:hover > ul {
     background-color: #FD6D70;
+    display: inline-block;
     z-index: 20;
-    -webkit-transition: scaleY(1);
-    transition: scaleY(1);
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    position: relative;
   }
   .nav-menu li a {
     display: -webkit-box;
@@ -374,11 +377,9 @@ a {
     font-size: 16px;
   }
   .nav-menu li ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-transition: scaleY(0);
-    transition: scaleY(0);
+    display: none;
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
     -webkit-transition: 0.3s;
     transition: 0.3s;
     position: relative;

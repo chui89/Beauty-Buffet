@@ -42,23 +42,25 @@
     &-menu
       display: flex
       flex-direction: column
+      z-index: 20
       li
         padding: 0
         z-index: 20
         transition: 0.3s
         &:hover > ul
           background-color: $main-color-d
-          // display: inline-block
+          display: inline-block
           z-index: 20
-          transition: scaleY(1)
+          transform: scaleY(1)
+          position: relative
         a
           display: flex
           padding: 10px
           color: #fff
           font-size: 16px
         ul
-          display: flex
-          transition: scaleY(0)
+          display: none
+          transform: scaleY(0)
           transition: 0.3s
           position: relative
           margin-top: 0
