@@ -84,8 +84,6 @@ a
   font-family: 'Futura PT Demi', sans-serif
   margin-top: 30px
   background-color: $main-color
-  &-active
-    display: flex !important
   &-menu
     font-size: 18px
     list-style: none
@@ -97,21 +95,20 @@ a
       &:hover
         background-color: $main-color-d
       &:hover > ul
-        transform: translateY(0)
+        transform: scaleY(1)
         z-index: 0
-        display: flex
       a
         padding: 10px 20px
         text-transform: uppercase
         color: snow
       ul
-        z-index: -1
-        display: none
+        display: flex
         background-color: $main-color
         position: absolute
         margin-top: 10px
         list-style: none
-        transform: translateY(-100%)
+        transform: scaleY(0)
+        transform-origin: top center 0
         transition: 0.3s
 
 .stocks
