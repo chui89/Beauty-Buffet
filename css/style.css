@@ -345,7 +345,6 @@ a {
     padding: 0;
   }
   .nav-menu {
-    z-index: 20;
     display: block;
   }
   .nav-menu li {
@@ -373,7 +372,6 @@ a {
     font-size: 16px;
   }
   .nav-menu li ul {
-    display: none;
     -webkit-transform: scaleY(0);
             transform: scaleY(0);
     -webkit-transform-origin: top center 0;
@@ -381,7 +379,6 @@ a {
     -webkit-transition: 0.3s;
     transition: 0.3s;
     position: relative;
-    z-index: 20;
     margin-top: 0;
     padding-left: 10px;
   }
