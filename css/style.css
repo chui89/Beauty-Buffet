@@ -337,7 +337,6 @@ a {
     -webkit-transition: 0.3s;
     transition: 0.3s;
     background-color: white;
-    border: 1px solid #FD6D70;
   }
   .nav_active {
     display: -webkit-box;
