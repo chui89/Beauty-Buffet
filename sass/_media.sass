@@ -24,7 +24,7 @@
             display: flex
             opacity: 1
   .nav
-    z-index: 18
+    z-index: 6
     margin-top: 20px
     position: absolute
     right: 0
@@ -32,6 +32,8 @@
     transform: scaleX(0)
     transform-origin: right center 0
     transition: 0.3s
+    background-color: white
+    border: 1px solid $main-color-d
     &_active
       display: flex
       opacity: 1
@@ -42,30 +44,25 @@
     &-menu
       display: flex
       flex-direction: column
-      z-index: 20
       li
         padding: 0
-        z-index: 20
         transition: 0.3s
-        &:hover > ul
-          background-color: $main-color-d
-          // display: inline-block
-          // z-index: 20
-          // transform: scaleY(1)
-          // position: relative
+        &:hover
+          background-color: white
         a
+          border-bottom: 1px solid $main-color-d
           display: flex
           justify-content: center
           padding: 10px
-          color: #fff
-          font-size: 16px
+          color: $main-color-d
+          font-size: 14px
         ul
           display: block
+          background-color: white
           transform: scaleY(1)
-          transition: 0.3s
           position: relative
           margin-top: 0
-          padding-left: 10px
+          padding-left: 40px
           li
             padding: 0
   .content
