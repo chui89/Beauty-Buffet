@@ -362,24 +362,22 @@ a {
   }
   .nav-menu li:hover > ul {
     background-color: #FD6D70;
-    display: inline-block;
-    z-index: 20;
-    -webkit-transform: scaleY(1);
-            transform: scaleY(1);
-    position: relative;
   }
   .nav-menu li a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding: 10px;
     color: #fff;
     font-size: 16px;
   }
   .nav-menu li ul {
-    display: none;
-    -webkit-transform: scaleY(0);
-            transform: scaleY(0);
+    display: block;
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
     -webkit-transition: 0.3s;
     transition: 0.3s;
     position: relative;
