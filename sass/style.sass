@@ -18,6 +18,17 @@ a
   text-decoration: none
   font-family: 'Futura PT Demi', sans-serif
 
+.slick-track
+  display: flex !important
+
+.slick-slide
+  height: inherit !important
+
+.hide
+  display: none !important
+.show
+  display: block !important
+
 .content
 
 .section
@@ -146,7 +157,7 @@ a
         margin-bottom: 20px
         color: $main-color-d
         padding: 10px
-        border: 1px solid $main-color-d
+        border: 2px solid $main-color
         transition: 0.3s
         &:hover
           box-shadow: 0 0 10px $main-color-l
@@ -190,7 +201,7 @@ a
         margin-bottom: 10px
         content: ''
         width: 100%
-        height: 3px
+        height: 5px
         border-radius: 10px
         background-color: #fff
         transform: scaleX(0)
@@ -205,5 +216,38 @@ a
         &:before
           background-color: $main-color-d
           transform: scaleX(1)
+.news-slider, .pop-slider, .sale-slider
+  margin-top: 20px
+  &_item
+    padding: 10px
+    text-align: center
+    &__img
+      width: 100%
+    &__title
+      margin-top: 20px
+      font-size: 18px
+      text-transform: uppercase
+    &__description
+      margin-top: 10px
+      font-size: 16px
+      color: $link-color
+      text-align: left
+    &__price
+      margin-top: 10px
+      font-size: 20px
+      font-weight: 700
+      font-family: 'Futura PT Demi', sans-serif
+      i
+        font-size: 16px
+    &__link
+      margin-top: 15px
+      display: inline-block
+      margin-bottom: 20px
+      color: $main-color-d
+      padding: 10px
+      border: 2px solid $main-color
+      transition: 0.3s
+      &:hover
+        box-shadow: 0 0 10px $main-color-l
 
 @import 'media'

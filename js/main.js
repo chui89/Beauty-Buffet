@@ -19,6 +19,20 @@ $(document).ready(function() {
     dots: true,
     dotsClass: 'stocks-slider-dots'
   });
+
+  $('.news-slider, .pop-slider, .sale-slider').slick({
+    slidesToShow: 4,
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 2,
+        }
+      }
+    ]
+  });
+
   $(window).on('click', function(e) {
     target = e.target;
     console.log(target);
