@@ -13,11 +13,11 @@ $(document).ready(function() {
     $('.fa-bars').toggleClass('fa-bars-change');
   });
 
-  $('.slider').slick({
+  $('.stocks-slider').slick({
     slidesToShow: 1,
     arrows: false,
     dots: true,
-    dotsClass: 'slider-dots'
+    dotsClass: 'stocks-slider-dots'
   });
   $(window).on('click', function(e) {
     target = e.target;

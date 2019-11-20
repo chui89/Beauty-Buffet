@@ -115,65 +115,95 @@ a
         transition: 0.3s
 
 .stocks
-
-.slider
-  position: relative !important
-  &_item
-    // border: 1px solid grey
-    outline: none
-    &__info
-      padding: 30px
-    &__img
-      display: flex
-      justify-content: flex-end
-      overflow: hidden
-      img
-        max-width: 100%
-        background: url('../img/1.jpg') no-repeat center top
-        background-size: contain
-    &__title
-      display: inline-block
-      padding: 0 5px
-      text-transform: uppercase
-      margin-bottom: 30px
-      background-color: $main-color
-      color: #fff
-      font-size: 1.5rem
-    &__text
-      margin-bottom: 30px
-      font-size: 18px
-    &__link
-      display: inline-block
-      margin-bottom: 20px
-      color: $main-color-d
-      padding: 10px
-      border: 1px solid $main-color-d
-      transition: 0.3s
-      &:hover
-        box-shadow: 0 0 10px $main-color-l
-  &-dots
-    position: absolute
-    bottom: 20px
-    left: 20px
-    list-style: none
-    display: flex
-    li
-      button
-        cursor: pointer
-        width: 15px
-        height: 15px
-        border-radius: 50%
-        margin-left: 10px
-        margin-right: 10px
-        border: none
+  &-slider
+    position: relative !important
+    &_item
+      // border: 1px solid grey
+      outline: none
+      &__info
+        padding: 30px
+      &__img
+        display: flex
+        justify-content: flex-end
+        overflow: hidden
+        img
+          max-width: 100%
+          background: url('../img/1.jpg') no-repeat center top
+          background-size: contain
+      &__title
+        display: inline-block
+        padding: 0 5px
+        text-transform: uppercase
+        margin-bottom: 30px
         background-color: $main-color
-        color: $main-color
+        color: #fff
+        font-size: 1.5rem
+      &__text
+        margin-bottom: 30px
+        font-size: 18px
+      &__link
+        display: inline-block
+        margin-bottom: 20px
+        color: $main-color-d
+        padding: 10px
+        border: 1px solid $main-color-d
         transition: 0.3s
         &:hover
-          background-color: $main-color-l
-          color: $main-color-l
-        &[aria-selected='true']
+          box-shadow: 0 0 10px $main-color-l
+    &-dots
+      position: absolute
+      bottom: 20px
+      left: 20px
+      list-style: none
+      display: flex
+      li
+        button
+          cursor: pointer
+          width: 15px
+          height: 15px
+          border-radius: 50%
+          margin-left: 10px
+          margin-right: 10px
+          border: none
+          background-color: $main-color
+          color: $main-color
+          transition: 0.3s
+          &:hover
+            background-color: $main-color-l
+            color: $main-color-l
+          &[aria-selected='true']
+            background-color: $main-color-d
+            color: $main-color-d
+
+.tabs
+  margin-top: 30px
+  &-nav
+    display: flex
+    justify-content: center
+    &__link
+      padding: 20px 40px
+      color: $section-title
+      font-size: 20px
+      color: $link-color
+      &:before
+        display: block
+        margin-bottom: 10px
+        content: ''
+        width: 100%
+        height: 3px
+        border-radius: 10px
+        background-color: #fff
+        transform: scaleX(0)
+        transition: 0.3s
+      &:hover
+        color: $section-title
+        &:before
+          background-color: $main-color
+          transform: scaleX(1)
+      &-active
+        color: $section-title
+        &:before
           background-color: $main-color-d
-          color: $main-color-d
+          transform: scaleX(1)
 
 @import 'media'
