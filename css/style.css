@@ -14,18 +14,18 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Futura PT Light';
+  src: url("../fonts/FuturaPT-Light.eot");
+  src: url("../fonts/FuturaPT-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/FuturaPT-Light.woff") format("woff"), url("../fonts/FuturaPT-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
   outline: none;
-}
-
-body {
-  position: relative;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Futura PT Demi', sans-serif;
 }
 
 p {
@@ -38,12 +38,18 @@ a {
 }
 
 .section {
+  border-bottom: 2px solid #FE999B;
+}
+
+.section-title {
   margin-top: 40px;
+  margin-bottom: 20px;
 }
 
 .section_title {
-  margin-bottom: 20px;
+  font-family: 'Futura PT Demi', sans-serif;
   color: #434343;
+  text-align: left;
 }
 
 .header {
@@ -132,7 +138,7 @@ a {
 
 .nav {
   font-family: 'Futura PT Demi', sans-serif;
-  margin-top: 30px;
+  margin-top: 20px;
   background-color: #FE999B;
 }
 
@@ -282,11 +288,6 @@ a {
   color: #FD6D70;
 }
 
-.products {
-  border-bottom: 2px solid #FE999B;
-  margin-top: 20px;
-}
-
 .products-grid {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -390,7 +391,15 @@ a {
 
 @media (max-width: 767px) {
   .section {
+    border-bottom: none;
+  }
+  .section-title {
     margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .section_title {
+    border-bottom: 1px solid #FE999B;
+    font-family: 'Futura PT Light', sans-serif;
   }
   .header {
     margin-top: 10px;
@@ -432,10 +441,8 @@ a {
   }
   .nav {
     z-index: 6;
-    margin-top: 20px;
     position: absolute;
     right: 0;
-    opacity: 0;
     -webkit-transform: scaleX(0);
             transform: scaleX(0);
     -webkit-transform-origin: right center 0;
@@ -443,6 +450,7 @@ a {
     -webkit-transition: 0.3s;
     transition: 0.3s;
     background-color: white;
+    opacity: 0;
   }
   .nav_active {
     display: -webkit-box;
@@ -474,6 +482,8 @@ a {
     background-color: white;
   }
   .nav-menu li a {
+    font-family: 'Futura PT Light', sans-serif;
+    font-weight: 700;
     border-bottom: 1px solid #FD6D70;
     display: -webkit-box;
     display: -ms-flexbox;
