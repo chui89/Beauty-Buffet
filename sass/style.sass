@@ -193,13 +193,13 @@ a
         font-size: 18px
         text-transform: uppercase
         font-family: 'Futura PT Demi', sans-serif
+        color: $section-title
       &__description
         margin-top: 10px
         font-size: 16px
         color: $link-color
         text-align: left
       &-bottom
-        bottom: 0
         width: 100%
         margin-top: 20px
         display: flex
@@ -231,4 +231,75 @@ a
     &:hover
       background-color: $main-color-d
 
+.footer
+  margin-top: 30px
+  padding: 20px 0
+  background-color: $header-color
+  &_logo
+  &-title
+  &_title
+    font-family: 'Sunshiney', cursive
+    color: white
+    font-weight: lighter
+    border-bottom: 1px solid grey
+  &-description
+    margin-top: 10px
+    color: white
+  &-menu
+    padding: 0
+    list-style: none
+    li
+      // padding: 5px 0
+      transition: 0.3s
+      &:hover > a:after
+        transform: scaleX(1)
+        // text-decoration: underline
+      a
+        padding: 5px 20px
+        color: white
+        font-size: 18px
+        transition: 0.3s
+        font-family: 'Futura PT Book', sans-serif
+        transition: 0.3s
+        &:after
+          content: ''
+          display: block
+          margin-top: 10px
+          width: 100%
+          height: 1px
+          background-color: grey
+          transform: scaleX(0)
+          transform-origin: left center
+          transition: 0.3s
+  &_contacts
+    display: flex
+    flex-direction: column
+  &__phone
+    font-family: 'Futura PT Book', sans-serif
+    text-align: right
+    font-size: 24px
+    color: white
+  &__time
+    font-size: 18px
+    font-style: italic
+    text-align: right
+    color: white
+    font-family: 'Futura PT Light', sans-serif
+  &_socials
+    margin-top: 10px
+    justify-content: flex-end
+    display: flex
+    &:nth-child(odd)
+      i
+        cursor: pointer
+        display: flex
+        margin-left: 10px
+        background-color: white
+        border-radius: 50%
+        width: 30px
+        height: 30px
+        justify-content: center
+        align-items: center
+        &:hover
+          background-color: grey
 @import 'media'
