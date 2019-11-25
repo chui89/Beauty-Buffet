@@ -432,7 +432,6 @@ a {
 }
 
 .footer-menu li a {
-  padding: 5px 20px;
   color: white;
   font-size: 18px;
   -webkit-transition: 0.3s;
@@ -444,7 +443,6 @@ a {
 .footer-menu li a:after {
   content: '';
   display: block;
-  margin-top: 10px;
   width: 100%;
   height: 1px;
   background-color: grey;
@@ -464,11 +462,11 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  text-align: right;
 }
 
 .footer__phone {
   font-family: 'Futura PT Book', sans-serif;
-  text-align: right;
   font-size: 24px;
   color: white;
 }
@@ -476,7 +474,6 @@ a {
 .footer__time {
   font-size: 18px;
   font-style: italic;
-  text-align: right;
   color: white;
   font-family: 'Futura PT Light', sans-serif;
 }
@@ -701,5 +698,24 @@ a {
   .products-grid_item__price {
     padding: 10px;
   }
+}
+
+.footer-item {
+  text-align: center;
+}
+
+.footer-menu li {
+  padding: 10px 0;
+}
+
+.footer_contacts {
+  text-align: center;
+}
+
+.footer_socials {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 10px;
 }
 /*# sourceMappingURL=style.css.map */
