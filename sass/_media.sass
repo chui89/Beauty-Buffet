@@ -49,6 +49,7 @@
     &-menu
       display: flex
       flex-direction: column
+      background-color: white
       li
         padding: 0
         transition: 0.3s
@@ -72,7 +73,7 @@
           padding-left: 40px
           li
             padding: 0
-  .content
+  .wrapper
     position: relative
   .popup
     display: none
@@ -108,18 +109,31 @@
       display: flex
       flex-wrap: wrap
       align-items: stretch
-      justify-content: flex-start
+      justify-content: space-between
       &_item
-        flex: 0 0 50%
-        max-width: 50%
+        flex: 0 0 48%
+        margin: 2px
+        max-width: 48%
         padding: 16px
         box-sizing: border-box
         text-align: center
+        margin-bottom: 20px
+        &__title
+          font-size: 16px
+        &__description
+          text-align: center
+          font-size: 14px
+          margin-bottom: 10px
         &-bottom
           flex-direction: column
-          margin-top: 10px
+          // margin-top: 10px
         &__price
           padding: 10px
+          font-size: 16px
+          i
+            font-size: 14px
+        &__link
+          display: none
 
 
 .footer
@@ -129,7 +143,8 @@
     li
       padding: 10px 0
   &_contacts
-    text-align: center
+    // text-align: center
+    align-items: center
   &_socials
     justify-content: center
     margin-bottom: 10px

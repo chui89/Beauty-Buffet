@@ -64,12 +64,15 @@ a
       margin-left: 20px
       color: $link-color
       transition: 0.3s
+      display: flex
       &:hover
-        color: $main-color-d
-      i
-        color: $main-color
-        margin-right: 10px
-        font-size: 28px
+        color: #1155CC
+      &:first-child
+        margin-bottom: 5px
+    img
+      margin-right: 2px
+      width: 20px
+      height: 20px
   &_bars
     a
       font-size: 34px
@@ -78,12 +81,26 @@ a
 .nav
   font-family: 'Futura PT Demi', sans-serif
   margin-top: 20px
-  background-color: $main-color
+  // background-color: $main-color
+  background-image: linear-gradient(to bottom right, #08bff7, #ce33f5)
+  // width: 100%
   &-menu
     font-size: 18px
     list-style: none
     display: flex
     justify-content: center
+    &:before
+      content: ''
+      display: block
+      width: 20px
+      height: auto
+      background-color: #fff
+    &:after
+      content: ''
+      display: block
+      width: 20px
+      height: auto
+      background-color: #fff
     li
       padding: 10px 0
       transition: 0.3s
@@ -175,50 +192,75 @@ a
     display: flex
     flex-wrap: wrap
     align-items: stretch
-    justify-content: flex-start
+    justify-content: center
+    box-sizing: border-box
     &_item
-      max-width: 25%
+      outline: 1px solid lighten(grey, 30%)
+      margin: 5px
+      max-width: 24%
       padding: 16px
       cursor: pointer
       display: flex
+      flex-direction: column
       flex-wrap: wrap
-      justify-content: center
+      justify-content: flex-start
+      align-content: stretch
+      align-items: stretch
+      &-img
+        width: 100%
+      //   vertical-align: baseline
+      //   order: 1
+      // &-description
+      //   width: 100%
+      //   vertical-align: baseline
+      //   order: 2
       &:hover
         box-shadow: 0 6px 24px 0 rgba(47,47,47,.12)
       &__img
-        max-width: 100%
+        width: 100%
+        // max-width: 100%
         margin-top: 20px
       &__title
         margin-top: 20px
         font-size: 18px
         text-transform: uppercase
         font-family: 'Futura PT Demi', sans-serif
-        color: $section-title
+        color: #222
+        // color: $section-title
+        text-align: center
       &__description
         margin-top: 10px
         font-size: 16px
         color: $link-color
         text-align: left
+        margin-bottom: 15px
       &-bottom
+        vertical-align: baseline
+        // order: 3
         width: 100%
-        margin-top: 20px
+        margin-top: auto
         display: flex
         justify-content: space-between
         align-items: center
+        // margin-bottom: auto
       &__price
         font-size: 20px
         font-weight: 700
         font-family: 'Futura PT Demi', sans-serif
+        color: #222
         i
           font-size: 16px
+          color: #222
       &__link
         display: inline-block
-        color: $main-color-d
+        color: #222
         padding: 10px
-        border: 2px solid $main-color
+        // border-bottom: 2px solid #222
+        border-radius: 10px
         transition: 0.3s
+        box-shadow: -1px 1px 5px rgba(34, 34, 34, 0.5)
         &:hover
-          box-shadow: 0 0 10px $main-color-l
+          box-shadow: -3px 3px 5px rgba(34, 34, 34, 0.5)
   &-link
     margin: 40px
     text-align: center
@@ -234,7 +276,7 @@ a
 .footer
   margin-top: 30px
   padding: 20px 0
-  background-color: $header-color
+  background-color: #222
   &_logo
   &-title
   &_title
@@ -274,7 +316,8 @@ a
   &_contacts
     display: flex
     flex-direction: column
-    text-align: right
+    align-items: flex-end
+    // text-align: right
   &__phone
     font-family: 'Futura PT Book', sans-serif
     // text-align: right
