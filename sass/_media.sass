@@ -15,7 +15,7 @@
     &_bars
       a
         display: flex
-        color: $main-color
+        color: $main-clr-1
         .fa-bars
           display: flex
           transition: 0.3s
@@ -33,6 +33,7 @@
   .nav
     z-index: 6
     position: absolute
+    top: 70px
     right: 0
     transform: scaleX(0)
     transform-origin: right center 0
@@ -58,11 +59,11 @@
         a
           font-family: 'Futura PT Light', sans-serif
           font-weight: 700
-          border-bottom: 1px solid $main-color-d
+          border-bottom: 1px solid $main-clr-1
           display: flex
           justify-content: center
           padding: 10px
-          color: $main-color-d
+          color: $main-clr-1
           font-size: 14px
         ul
           display: block
@@ -143,9 +144,14 @@
       padding: 10px 0
   &_contacts
     align-items: center
+  &__phone
+    align-self: center
+  &__time
+    align-self: center
   &_socials
     justify-content: center
     margin-bottom: 10px
+    align-self: center
 
 @media (max-width: 399px)
   .section
@@ -285,3 +291,18 @@
 
 
 .footer
+  &-item
+    text-align: center
+  &-menu
+    li
+      padding: 10px 0
+  &_contacts
+    align-items: center
+  &__phone
+    align-self: center
+  &__time
+    align-self: center
+  &_socials
+    justify-content: center
+    margin-bottom: 10px
+    align-self: center

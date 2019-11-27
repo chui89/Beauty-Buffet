@@ -37,26 +37,6 @@ a {
   font-family: 'Futura PT Demi', sans-serif;
 }
 
-.section:after {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 2px;
-  background-image: -webkit-gradient(linear, left top, right top, from(#007d92), to(#f3166b));
-  background-image: linear-gradient(90deg, #007d92, #f3166b);
-}
-
-.section-title {
-  margin-top: 40px;
-  margin-bottom: 20px;
-}
-
-.section_title {
-  font-family: 'Futura PT Demi', sans-serif;
-  color: #222;
-  text-align: left;
-}
-
 .header {
   margin-top: 30px;
   font-family: 'Futura PT Demi', sans-serif;
@@ -71,7 +51,7 @@ a {
 }
 
 .header__title:hover {
-  color: #FD6D70;
+  color: #f3166b;
 }
 
 .header__subtitle {
@@ -154,6 +134,10 @@ a {
   margin-top: 20px;
   background-image: -webkit-gradient(linear, left top, right top, from(#007d92), to(#f3166b));
   background-image: linear-gradient(90deg, #007d92, #f3166b);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 200;
 }
 
 .nav-menu {
@@ -226,6 +210,25 @@ a {
   transition: 0.3s;
 }
 
+.stocks:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #f3166b;
+}
+
+.stocks-title {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.stocks_title {
+  font-family: 'Futura PT Demi', sans-serif;
+  color: #222;
+  text-align: left;
+}
+
 .stocks-slider {
   position: relative !important;
 }
@@ -259,7 +262,7 @@ a {
   padding: 0 5px;
   text-transform: uppercase;
   margin-bottom: 30px;
-  background-color: #007d92;
+  background-color: #f3166b;
   color: #fff;
   font-size: 1.5rem;
   font-family: 'Futura PT Demi', sans-serif;
@@ -273,16 +276,16 @@ a {
 .stocks-slider_item__link {
   display: inline-block;
   margin-bottom: 20px;
-  color: #007d92;
+  color: #f3166b;
   padding: 10px;
-  border: 2px solid #007d92;
+  border: 2px solid #f3166b;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
 .stocks-slider_item__link:hover {
-  color: #f3166b;
-  border: 2px solid #f3166b;
+  color: #007d92;
+  border: 2px solid #007d92;
 }
 
 .stocks-slider-dots {
@@ -317,6 +320,26 @@ a {
 .stocks-slider-dots li button[aria-selected='true'] {
   background-color: #f3166b;
   color: #f3166b;
+}
+
+.section:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#007d92), to(#f3166b));
+  background-image: linear-gradient(90deg, #007d92, #f3166b);
+}
+
+.section-title {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.section_title {
+  font-family: 'Futura PT Demi', sans-serif;
+  color: #222;
+  text-align: left;
 }
 
 .products-grid {
@@ -384,15 +407,15 @@ a {
 }
 
 .products-grid_item__status-new {
-  background-color: #007b00;
+  background-color: #5a9d2d;
 }
 
 .products-grid_item__status-favorite {
-  background-color: #ef6101;
+  background-color: #fdae55;
 }
 
 .products-grid_item__status-sale {
-  background-color: #ff3031;
+  background-color: #ff5575;
 }
 
 .products-grid_item__title {
@@ -443,7 +466,7 @@ a {
   font-size: 20px;
   font-weight: 700;
   font-family: 'Futura PT Demi', sans-serif;
-  color: #ff3031;
+  color: #ff5575;
 }
 
 .products-grid_item__price__sale {
@@ -496,6 +519,10 @@ a {
   margin-top: 30px;
   padding: 20px 0;
   background-color: #222;
+}
+
+.footer_logo {
+  text-align: left;
 }
 
 .footer_title {
@@ -565,6 +592,8 @@ a {
   font-family: 'Futura PT Book', sans-serif;
   font-size: 24px;
   color: white;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
 .footer__time {
@@ -572,6 +601,8 @@ a {
   font-style: italic;
   color: white;
   font-family: 'Futura PT Light', sans-serif;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
 .footer_socials {
@@ -582,6 +613,8 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
 .footer_socials:nth-child(odd) i {
@@ -628,7 +661,7 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    color: #FE999B;
+    color: #007d92;
   }
   .header_bars a .fa-bars {
     display: -webkit-box;
@@ -659,6 +692,7 @@ a {
   .nav {
     z-index: 6;
     position: absolute;
+    top: 70px;
     right: 0;
     -webkit-transform: scaleX(0);
             transform: scaleX(0);
@@ -702,7 +736,7 @@ a {
   .nav-menu li a {
     font-family: 'Futura PT Light', sans-serif;
     font-weight: 700;
-    border-bottom: 1px solid #FD6D70;
+    border-bottom: 1px solid #007d92;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -710,7 +744,7 @@ a {
         -ms-flex-pack: center;
             justify-content: center;
     padding: 10px;
-    color: #FD6D70;
+    color: #007d92;
     font-size: 14px;
   }
   .nav-menu li ul {
@@ -827,11 +861,26 @@ a {
           align-items: center;
 }
 
+.footer__phone {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.footer__time {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
 .footer_socials {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 10px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 @media (max-width: 399px) {
@@ -1039,5 +1088,41 @@ a {
   .products-grid_item__link {
     display: none;
   }
+}
+
+.footer-item {
+  text-align: center;
+}
+
+.footer-menu li {
+  padding: 10px 0;
+}
+
+.footer_contacts {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__phone {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.footer__time {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.footer_socials {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 10px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 /*# sourceMappingURL=style.css.map */
