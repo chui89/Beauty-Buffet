@@ -37,8 +37,13 @@ a {
   font-family: 'Futura PT Demi', sans-serif;
 }
 
-.section {
-  border-bottom: 2px solid #FE999B;
+.section:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#007d92), to(#f3166b));
+  background-image: linear-gradient(90deg, #007d92, #f3166b);
 }
 
 .section-title {
@@ -60,7 +65,7 @@ a {
 .header__title {
   font-family: 'Sunshiney', cursive;
   font-size: 34px;
-  color: #FE999B;
+  color: #007d92;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -90,7 +95,8 @@ a {
   content: '';
   width: 100%;
   height: 2px;
-  background-color: #FE999B;
+  background-image: -webkit-gradient(linear, left top, right top, from(#007d92), to(#f3166b));
+  background-image: linear-gradient(90deg, #007d92, #f3166b);
 }
 
 .header_contacts__time {
@@ -146,8 +152,8 @@ a {
 .nav {
   font-family: 'Futura PT Demi', sans-serif;
   margin-top: 20px;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#08bff7), to(#ce33f5));
-  background-image: linear-gradient(to bottom right, #08bff7, #ce33f5);
+  background-image: -webkit-gradient(linear, left top, right top, from(#007d92), to(#f3166b));
+  background-image: linear-gradient(90deg, #007d92, #f3166b);
 }
 
 .nav-menu {
@@ -189,7 +195,7 @@ a {
 }
 
 .nav-menu li:hover {
-  background-color: #FD6D70;
+  background-color: #007d92;
 }
 
 .nav-menu li:hover > ul {
@@ -253,7 +259,7 @@ a {
   padding: 0 5px;
   text-transform: uppercase;
   margin-bottom: 30px;
-  background-color: #FE999B;
+  background-color: #007d92;
   color: #fff;
   font-size: 1.5rem;
   font-family: 'Futura PT Demi', sans-serif;
@@ -267,16 +273,16 @@ a {
 .stocks-slider_item__link {
   display: inline-block;
   margin-bottom: 20px;
-  color: #FD6D70;
+  color: #007d92;
   padding: 10px;
-  border: 2px solid #FE999B;
+  border: 2px solid #007d92;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
 .stocks-slider_item__link:hover {
-  -webkit-box-shadow: 0 0 10px #FEBBBD;
-          box-shadow: 0 0 10px #FEBBBD;
+  color: #f3166b;
+  border: 2px solid #f3166b;
 }
 
 .stocks-slider-dots {
@@ -297,20 +303,20 @@ a {
   margin-left: 10px;
   margin-right: 10px;
   border: none;
-  background-color: #FE999B;
-  color: #FE999B;
+  background-color: #007d92;
+  color: #007d92;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
 .stocks-slider-dots li button:hover {
-  background-color: #FEBBBD;
-  color: #FEBBBD;
+  background-color: #cd8fa3;
+  color: #cd8fa3;
 }
 
 .stocks-slider-dots li button[aria-selected='true'] {
-  background-color: #FD6D70;
-  color: #FD6D70;
+  background-color: #f3166b;
+  color: #f3166b;
 }
 
 .products-grid {
@@ -435,7 +441,7 @@ a {
 
 .products_link {
   padding: 10px 20px;
-  background-color: #FE999B;
+  background-color: #007d92;
   border-radius: 30px;
   color: white;
   -webkit-transition: 0.3s;
@@ -443,7 +449,7 @@ a {
 }
 
 .products_link:hover {
-  background-color: #FD6D70;
+  background-color: #f3166b;
 }
 
 .footer {
