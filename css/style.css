@@ -338,7 +338,7 @@ a {
 .products-grid_item {
   outline: 1px solid #cdcdcd;
   margin: 5px;
-  max-width: 24%;
+  max-width: 23%;
   padding: 16px;
   cursor: pointer;
   display: -webkit-box;
@@ -358,10 +358,7 @@ a {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
-}
-
-.products-grid_item-img {
-  width: 100%;
+  position: relative;
 }
 
 .products-grid_item:hover {
@@ -372,6 +369,30 @@ a {
 .products-grid_item__img {
   width: 100%;
   margin-top: 20px;
+}
+
+.products-grid_item__status {
+  font-size: 18px;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  display: block;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  line-height: 0.8;
+}
+
+.products-grid_item__status-new {
+  background-color: green;
+}
+
+.products-grid_item__status-favorite {
+  background-color: orange;
+}
+
+.products-grid_item__status-sale {
+  background-color: red;
 }
 
 .products-grid_item__title {
@@ -414,6 +435,25 @@ a {
 }
 
 .products-grid_item__price i {
+  font-size: 16px;
+  color: #222;
+}
+
+.products-grid_item__price__wrong {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Futura PT Demi', sans-serif;
+  color: red;
+}
+
+.products-grid_item__price__sale {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Futura PT Demi', sans-serif;
+  color: #222;
+}
+
+.products-grid_item__price__sale i {
   font-size: 16px;
   color: #222;
 }
@@ -566,7 +606,7 @@ a {
   background-color: grey;
 }
 
-@media (max-width: 767px) {
+@media (min-width: 400px) and (max-width: 767px) {
   .section {
     border-bottom: none;
   }
@@ -748,7 +788,7 @@ a {
     margin-bottom: 20px;
   }
   .products-grid_item__title {
-    font-size: 16px;
+    font-size: 15px;
   }
   .products-grid_item__description {
     text-align: center;
@@ -792,5 +832,212 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 10px;
+}
+
+@media (max-width: 399px) {
+  .section {
+    border-bottom: none;
+  }
+  .section-title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .section_title {
+    border-bottom: 1px solid #FE999B;
+    font-family: 'Futura PT Light', sans-serif;
+  }
+  .header {
+    margin-top: 10px;
+  }
+  .header__subtitle {
+    display: none;
+  }
+  .header_bars a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: #FE999B;
+  }
+  .header_bars a .fa-bars {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .header_bars a .fa-bars-change {
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    display: none;
+    opacity: 0;
+  }
+  .header_bars a .fa-window-close {
+    display: none;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .header_bars a .fa-window-close-change {
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    opacity: 1;
+  }
+  .nav {
+    z-index: 6;
+    position: absolute;
+    right: 0;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transform-origin: right center 0;
+            transform-origin: right center 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    background-color: white;
+    opacity: 0;
+  }
+  .nav_active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    opacity: 1;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  .nav .container, .nav .container-fluid {
+    margin: 0;
+    padding: 0;
+  }
+  .nav-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: white;
+  }
+  .nav-menu li {
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .nav-menu li:hover {
+    background-color: white;
+  }
+  .nav-menu li a {
+    font-family: 'Futura PT Light', sans-serif;
+    font-weight: 700;
+    border-bottom: 1px solid #FD6D70;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 10px;
+    color: #FD6D70;
+    font-size: 14px;
+  }
+  .nav-menu li ul {
+    display: block;
+    background-color: white;
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    position: relative;
+    margin-top: 0;
+    padding-left: 40px;
+  }
+  .nav-menu li ul li {
+    padding: 0;
+  }
+  .wrapper {
+    position: relative;
+  }
+  .popup {
+    display: none;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0.8;
+  }
+  .stocks-slider {
+    position: relative;
+  }
+  .stocks-slider_item__info {
+    padding: 10px;
+  }
+  .stocks-slider_item__title {
+    margin-bottom: 10px;
+  }
+  .stocks-slider_item__text {
+    margin-bottom: 10px;
+  }
+  .stocks-slider-dots {
+    top: -20px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .stocks-slider-dots li button {
+    font-size: 1px;
+    width: 10px;
+    height: 10px;
+  }
+  .products-grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .products-grid_item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 98%;
+            flex: 0 0 98%;
+    margin: 2px;
+    max-width: 98%;
+    padding: 16px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .products-grid_item__title {
+    font-size: 15px;
+  }
+  .products-grid_item__description {
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .products-grid_item-bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .products-grid_item__price {
+    padding: 10px;
+    font-size: 16px;
+  }
+  .products-grid_item__price i {
+    font-size: 14px;
+  }
+  .products-grid_item__link {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
