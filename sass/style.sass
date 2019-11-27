@@ -13,7 +13,6 @@ a
   font-family: 'Futura PT Demi', sans-serif
 
 .section
-  // border-bottom: 2px solid $main-color
   &:after
     content: ''
     display: block
@@ -32,7 +31,6 @@ a
   margin-top: 30px
   font-family: 'Futura PT Demi', sans-serif
   &_logo
-    // display: flex
   &__title
     font-family: 'Sunshiney', cursive
     font-size: 34px
@@ -56,7 +54,6 @@ a
         width: 100%
         height: 2px
         background-image: linear-gradient(90deg, #007d92, #f3166b)
-        // background-color: $main-color
     &__time
       font-style: italic
       font-size: 18px
@@ -88,9 +85,7 @@ a
 .nav
   font-family: 'Futura PT Demi', sans-serif
   margin-top: 20px
-  // background-color: $main-color
   background-image: linear-gradient(90deg, #007d92, #f3166b)
-  // width: 100%
   &-menu
     font-size: 18px
     list-style: none
@@ -170,7 +165,6 @@ a
         &:hover
           color: #f3166b
           border: 2px solid #f3166b
-          // box-shadow: 0 0 10px $main-color-l
     &-dots
       position: absolute
       bottom: 20px
@@ -216,19 +210,10 @@ a
       align-content: stretch
       align-items: stretch
       position: relative
-      // &-img
-      //   width: 100%
-      //   vertical-align: baseline
-      //   order: 1
-      // &-description
-      //   width: 100%
-      //   vertical-align: baseline
-      //   order: 2
       &:hover
         box-shadow: 0 6px 24px 0 rgba(47,47,47,.12)
       &__img
         width: 100%
-        // max-width: 100%
         margin-top: 20px
       &__status
         font-size: 18px
@@ -236,24 +221,22 @@ a
         left: 10px
         top: 10px
         display: block
-        // background-color: orange
         color: white
         padding: 5px
         border-radius: 5px
         line-height: 0.8
         &-new
-          background-color: green
+          background-color: #007b00
         &-favorite
-          background-color: orange
+          background-color: #ef6101
         &-sale
-          background-color: red
+          background-color: #ff3031
       &__title
         margin-top: 20px
         font-size: 18px
         text-transform: uppercase
         font-family: 'Futura PT Demi', sans-serif
         color: #222
-        // color: $section-title
         text-align: center
       &__description
         margin-top: 10px
@@ -263,13 +246,11 @@ a
         margin-bottom: 15px
       &-bottom
         vertical-align: baseline
-        // order: 3
         width: 100%
         margin-top: auto
         display: flex
         justify-content: space-between
         align-items: center
-        // margin-bottom: auto
       &__price
         font-size: 20px
         font-weight: 700
@@ -282,7 +263,7 @@ a
           font-size: 20px
           font-weight: 700
           font-family: 'Futura PT Demi', sans-serif
-          color: red
+          color: #ff3031
         &__sale
           font-size: 20px
           font-weight: 700
@@ -295,7 +276,6 @@ a
         display: inline-block
         color: #222
         padding: 10px
-        // border-bottom: 2px solid #222
         border-radius: 10px
         transition: 0.3s
         box-shadow: -1px 1px 5px rgba(34, 34, 34, 0.5)
@@ -307,13 +287,11 @@ a
   &_link
     padding: 10px 20px
     background-color: #007d92
-    // background-image: linear-gradient(90deg, #007d92, #007d92)
     border-radius: 30px
     color: white
     transition: 0.3s
     &:hover
       background-color: #f3166b
-      // background-image: linear-gradient(90deg, #007d92, #f3166b)
 
 .footer
   margin-top: 30px
@@ -333,13 +311,10 @@ a
     padding: 0
     list-style: none
     li
-      // padding: 5px 0
       transition: 0.3s
       &:hover > a:after
         transform: scaleX(1)
-        // text-decoration: underline
       a
-        // padding: 5px 20px
         color: white
         font-size: 18px
         transition: 0.3s
@@ -348,7 +323,6 @@ a
         &:after
           content: ''
           display: block
-          // margin-top: 10px
           width: 100%
           height: 1px
           background-color: grey
@@ -359,16 +333,13 @@ a
     display: flex
     flex-direction: column
     align-items: flex-end
-    // text-align: right
   &__phone
     font-family: 'Futura PT Book', sans-serif
-    // text-align: right
     font-size: 24px
     color: white
   &__time
     font-size: 18px
     font-style: italic
-    // text-align: right
     color: white
     font-family: 'Futura PT Light', sans-serif
   &_socials

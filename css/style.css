@@ -384,15 +384,15 @@ a {
 }
 
 .products-grid_item__status-new {
-  background-color: green;
+  background-color: #007b00;
 }
 
 .products-grid_item__status-favorite {
-  background-color: orange;
+  background-color: #ef6101;
 }
 
 .products-grid_item__status-sale {
-  background-color: red;
+  background-color: #ff3031;
 }
 
 .products-grid_item__title {
@@ -443,7 +443,7 @@ a {
   font-size: 20px;
   font-weight: 700;
   font-family: 'Futura PT Demi', sans-serif;
-  color: red;
+  color: #ff3031;
 }
 
 .products-grid_item__price__sale {
