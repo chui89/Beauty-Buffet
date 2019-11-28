@@ -4,6 +4,7 @@ $(document).ready(function() {
     $('.fa-window-close').toggleClass('fa-window-close-change');
     $('.popup').fadeToggle();
     $('.fa-bars').toggleClass('fa-bars-change');
+    $('body').toggleClass('fixed');
   });
 
   $('.popup').on('click', function() {
@@ -11,6 +12,7 @@ $(document).ready(function() {
     $('.fa-window-close').toggleClass('fa-window-close-change');
     $('.popup').fadeToggle();
     $('.fa-bars').toggleClass('fa-bars-change');
+    $('body').toggleClass('fixed');
   });
 
   $('.stocks-slider').slick({

@@ -12,6 +12,10 @@ a
   text-decoration: none
   font-family: 'Futura PT Demi', sans-serif
 
+.fixed
+  position: fixed // позицианируем чтобы исчез скролл
+  width: 100% // чтобы верстка не складывалась по ширине
+
 .header
   margin-top: 30px
   font-family: 'Futura PT Demi', sans-serif
@@ -185,10 +189,10 @@ a
           transition: 0.3s
           &:hover
             background-color: #cd8fa3
-            color: #cd8fa3
+            color: transparent
           &[aria-selected='true']
             background-color: $main-clr-2
-            color: $main-clr-2
+            color: transparent
 
 .section
   &:after

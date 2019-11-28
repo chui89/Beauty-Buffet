@@ -1,3 +1,38 @@
+@media (min-width: 992px) and (max-width: 1199px)
+  .products
+    &-grid
+      &_item
+        &__title
+          font-size: 16px
+        &__description
+          font-size: 14px
+        &-bottom
+          flex-direction: column
+        &__link
+          margin-top: 5px
+
+@media (min-width: 768px) and (max-width: 991px)
+  .nav
+    &-menu
+      &:before
+        display: none
+      &:after
+        display: none
+  .products
+    &-grid
+      &_item
+        max-width: 48%
+        &__title
+          font-size: 16px
+        &__description
+          font-size: 14px
+        &-bottom
+          // flex-direction: column
+        &__price
+          margin-bottom: 10px
+          &__sale
+            margin: 10px 0
+
 @media (min-width: 400px) and (max-width: 767px)
   .section
     border-bottom: none
