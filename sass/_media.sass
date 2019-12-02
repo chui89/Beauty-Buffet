@@ -12,6 +12,9 @@
           margin-top: 10px
 
 @media (min-width: 768px) and (max-width: 991px)
+  .header
+    &__title
+      font-size: 36px
   .nav
     &-menu
       &:before
@@ -45,12 +48,14 @@
 
   .header
     margin-top: 10px
+    &__title
+      font-size: 40px
     &__subtitle
       display: none
     &_bars
       a
         display: flex
-        color: $main-clr-1
+        color: $main-clr-2
         .fa-bars
           display: flex
           transition: 0.3s
@@ -94,11 +99,11 @@
         a
           font-family: 'Futura PT Light', sans-serif
           font-weight: 700
-          border-bottom: 1px solid $main-clr-1
+          border-bottom: 1px solid $main-clr-2
           display: flex
           justify-content: center
           padding: 10px
-          color: $main-clr-1
+          color: $main-clr-2
           font-size: 14px
         ul
           display: block
@@ -195,17 +200,19 @@
       margin-top: 20px
       margin-bottom: 20px
     &_title
-      border-bottom: 1px solid $main-color
+      border-bottom: 1px solid $main-clr-2
       font-family: 'Futura PT Light', sans-serif
 
   .header
     margin-top: 10px
+    &__title
+      font-size: 36px
     &__subtitle
       display: none
     &_bars
       a
         display: flex
-        color: $main-color
+        color: $main-clr-2
         .fa-bars
           display: flex
           transition: 0.3s
@@ -223,6 +230,7 @@
   .nav
     z-index: 6
     position: absolute
+    top: 70px
     right: 0
     transform: scaleX(0)
     transform-origin: right center 0
@@ -248,11 +256,11 @@
         a
           font-family: 'Futura PT Light', sans-serif
           font-weight: 700
-          border-bottom: 1px solid $main-color-d
+          border-bottom: 1px solid $main-clr-2
           display: flex
           justify-content: center
           padding: 10px
-          color: $main-color-d
+          color: $main-clr-2
           font-size: 14px
         ul
           display: block
@@ -263,6 +271,49 @@
           padding-left: 40px
           li
             padding: 0
+  // .nav
+  //   z-index: 6
+  //   position: absolute
+  //   right: 0
+  //   transform: scaleX(0)
+  //   transform-origin: right center 0
+  //   transition: 0.3s
+  //   background-color: white
+  //   opacity: 0
+  //   &_active
+  //     display: flex
+  //     opacity: 1
+  //     transform: scaleX(1)
+  //   .container, .container-fluid
+  //     margin: 0
+  //     padding: 0
+  //   &-menu
+  //     display: flex
+  //     flex-direction: column
+  //     background-color: white
+  //     li
+  //       padding: 0
+  //       transition: 0.3s
+  //       &:hover
+  //         background-color: white
+  //       a
+  //         font-family: 'Futura PT Light', sans-serif
+  //         font-weight: 700
+  //         border-bottom: 1px solid $main-color-d
+  //         display: flex
+  //         justify-content: center
+  //         padding: 10px
+  //         color: $main-color-d
+  //         font-size: 14px
+  //       ul
+  //         display: block
+  //         background-color: white
+  //         transform: scaleY(1)
+  //         position: relative
+  //         margin-top: 0
+  //         padding-left: 40px
+  //         li
+  //           padding: 0
   .wrapper
     position: relative
   .popup
