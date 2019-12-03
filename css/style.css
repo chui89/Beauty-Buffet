@@ -56,7 +56,7 @@ a {
 }
 
 .header__title:hover {
-  color: #f3166b;
+  color: #007d92;
 }
 
 .header__subtitle {
@@ -321,7 +321,7 @@ a {
 }
 
 .stocks-slider-dots li button:hover {
-  background-color: #cd8fa3;
+  background-color: #ea76a7;
   color: transparent;
 }
 
@@ -403,6 +403,12 @@ a {
   color: #f3166b;
 }
 
+.products-grid_item a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .products-grid_item__img {
   width: 100%;
   margin-top: 20px;
@@ -452,7 +458,6 @@ a {
 }
 
 .products-grid_item-bottom {
-  vertical-align: baseline;
   width: 100%;
   margin-top: auto;
   display: -webkit-box;
@@ -464,6 +469,8 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
 .products-grid_item__price {
@@ -556,6 +563,7 @@ a {
   color: white;
   font-weight: lighter;
   border-bottom: 1px solid grey;
+  cursor: pointer;
 }
 
 .footer-description {
