@@ -21,9 +21,4 @@ $(document).ready(function() {
     dots: true,
     dotsClass: 'stocks-slider-dots'
   });
-
-  $(window).on('click', function(e) {
-    target = e.target;
-    console.log(target);
-  });
 });
