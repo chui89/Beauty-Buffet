@@ -37,6 +37,10 @@ a {
   font-family: 'Futura PT Demi', sans-serif;
 }
 
+img {
+  width: 100%;
+}
+
 .fixed {
   position: fixed;
   width: 100%;
@@ -556,12 +560,17 @@ a {
   margin-top: 60px;
 }
 
-.products-card_img {
+.products-card_slider {
   outline: 1px solid #cdcdcd;
 }
 
-.products-card_img img {
+.products-card_slider img {
   max-width: 100%;
+  cursor: pointer;
+}
+
+.products-card_slider__primary {
+  border-top: 1px solid #cdcdcd;
 }
 
 .products-card_property {

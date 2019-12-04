@@ -11,6 +11,8 @@ p
 a
   text-decoration: none
   font-family: 'Futura PT Demi', sans-serif
+img
+  width: 100%
 
 .fixed
   position: fixed // позицианируем чтобы исчез скролл
@@ -328,10 +330,13 @@ a
       background-color: $main-clr-2
   &-card
     margin-top: 60px
-    &_img
+    &_slider
       outline: 1px solid lighten(grey, 30%)
       img
         max-width: 100%
+        cursor: pointer
+      &__primary
+        border-top: 1px solid lighten(grey, 30%)
     &_property
       font-size: 18px
       margin-top: 20px

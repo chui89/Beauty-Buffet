@@ -22,23 +22,29 @@ $(document).ready(function() {
     dotsClass: 'stocks-slider-dots'
   });
 
-  $('.products-card_slider-main').slick({
+  $('.products-card_slider__main').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
     fade: true,
-    asNavFor: '.products-card_slider',
+    asNavFor: '.products-card_slider__primary',
     draggable: false
   });
-  $('.products-card_slider').slick({
+  $('.products-card_slider__primary').slick({
     slidesToShow: 4,
     slidesToScroll: 4,
-    asNavFor: '.products-card_slider-main',
+    asNavFor: '.products-card_slider__main',
     // dots: true,
     centerMode: true,
     focusOnSelect: true,
     arrows: false,
     draggable: false
+  });
+
+  $('.products-similar_slider').slick({
+    slidesToShow: 4,
+    arrows: false,
+    dots: true
   });
 
 });
