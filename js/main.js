@@ -27,16 +27,18 @@ $(document).ready(function() {
     slidesToScroll: 1,
     arrows: false,
     fade: true,
-    asNavFor: '.products-card_slider'
+    asNavFor: '.products-card_slider',
+    draggable: false
   });
   $('.products-card_slider').slick({
     slidesToShow: 4,
-    slidesToScroll: 1,
+    slidesToScroll: 4,
     asNavFor: '.products-card_slider-main',
     // dots: true,
     centerMode: true,
     focusOnSelect: true,
-    arrows: false
+    arrows: false,
+    draggable: false
   });
 
 });
