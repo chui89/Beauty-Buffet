@@ -556,6 +556,10 @@ a {
   margin-top: 60px;
 }
 
+.products-card_img {
+  outline: 1px solid #cdcdcd;
+}
+
 .products-card_img img {
   max-width: 100%;
 }
@@ -566,6 +570,7 @@ a {
 }
 
 .products-card_property:after {
+  margin-top: 20px;
   content: '';
   display: block;
   width: 100%;
@@ -584,7 +589,7 @@ a {
 }
 
 .products-card_price {
-  padding: 20px;
+  padding: 20px 0;
 }
 
 .products-card_price p {
@@ -975,6 +980,9 @@ a {
   .products-grid_item__link {
     display: none;
   }
+  .products-card {
+    margin-top: 10px;
+  }
 }
 
 .footer-item {
@@ -1221,6 +1229,9 @@ a {
   }
   .products-grid_item__link {
     display: none;
+  }
+  .products-card {
+    margin-top: 10px;
   }
 }
 

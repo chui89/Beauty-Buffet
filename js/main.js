@@ -21,4 +21,22 @@ $(document).ready(function() {
     dots: true,
     dotsClass: 'stocks-slider-dots'
   });
+
+  $('.products-card_slider-main').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.products-card_slider'
+  });
+  $('.products-card_slider').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    asNavFor: '.products-card_slider-main',
+    // dots: true,
+    centerMode: true,
+    focusOnSelect: true,
+    arrows: false
+  });
+
 });
