@@ -28,6 +28,10 @@
   outline: none;
 }
 
+h2, h3, h4, h5, h6 {
+  font-family: 'Futura PT Demi', sans-serif;
+}
+
 p {
   font-family: 'Futura PT Book', sans-serif;
 }
@@ -560,17 +564,60 @@ img {
   margin-top: 60px;
 }
 
-.products-card_slider {
-  outline: 1px solid #cdcdcd;
-}
-
-.products-card_slider img {
+.products-card_img img {
+  border: 1px solid #d4d4d4;
   max-width: 100%;
   cursor: pointer;
 }
 
-.products-card_slider__primary {
-  border-top: 1px solid #cdcdcd;
+.products-card_img__primary {
+  margin-top: 10px;
+}
+
+.products-card_img__primary__item {
+  margin: 0 5px;
+}
+
+.products-card_info__title {
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.products-card_info__subtitle {
+  margin-bottom: 30px;
+}
+
+.products-card_info__option-block {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.products-card_info__option-title {
+  color: #616161;
+}
+
+.products-card_info__option-value {
+  color: #222;
+}
+
+.products-card_info__price {
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.products-card_info__price i {
+  font-size: 18px;
+}
+
+.products-card_info__description:before {
+  margin-bottom: 10px;
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#007d92), to(#f3166b));
+  background-image: linear-gradient(90deg, #007d92, #f3166b);
 }
 
 .products-card_property {
