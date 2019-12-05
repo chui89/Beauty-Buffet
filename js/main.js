@@ -41,10 +41,10 @@ $(document).ready(function() {
     draggable: false
   });
 
-  $('.products-similar_img').slick({
+  $('.products-card_similar__slider').slick({
     slidesToShow: 4,
-    arrows: false,
-    dots: true
+    slidesToScroll: 4,
+    arrows: false
   });
 
 });

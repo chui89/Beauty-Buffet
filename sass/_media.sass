@@ -45,7 +45,6 @@
     &_title
       border-bottom: 1px solid $main-color
       font-family: 'Futura PT Light', sans-serif
-
   .header
     margin-top: 10px
     &__title
@@ -73,7 +72,7 @@
   .nav
     z-index: 6
     position: absolute
-    top: 70px
+    top: 45px
     right: 0
     transform: scaleX(0)
     transform-origin: right center 0
@@ -176,24 +175,25 @@
           display: none
     &-card
       margin-top: 10px
-
-
-.footer
-  &-item
-    text-align: center
-  &-menu
-    li
-      padding: 10px 0
-  &_contacts
-    align-items: center
-  &__phone
-    align-self: center
-  &__time
-    align-self: center
-  &_socials
-    justify-content: center
-    margin-bottom: 10px
-    align-self: center
+      &_info
+        &__title
+          margin-top: 20px
+  .footer
+    &-item
+      text-align: center
+    &-menu
+      li
+        padding: 10px 0
+    &_contacts
+      align-items: center
+    &__phone
+      align-self: center
+    &__time
+      align-self: center
+    &_socials
+      justify-content: center
+      margin-bottom: 10px
+      align-self: center
 
 @media (max-width: 399px)
   .section
@@ -204,7 +204,6 @@
     &_title
       border-bottom: 1px solid $main-clr-2
       font-family: 'Futura PT Light', sans-serif
-
   .header
     margin-top: 10px
     &__title
@@ -232,7 +231,7 @@
   .nav
     z-index: 6
     position: absolute
-    top: 70px
+    top: 45px
     right: 0
     transform: scaleX(0)
     transform-origin: right center 0
@@ -273,49 +272,6 @@
           padding-left: 40px
           li
             padding: 0
-  // .nav
-  //   z-index: 6
-  //   position: absolute
-  //   right: 0
-  //   transform: scaleX(0)
-  //   transform-origin: right center 0
-  //   transition: 0.3s
-  //   background-color: white
-  //   opacity: 0
-  //   &_active
-  //     display: flex
-  //     opacity: 1
-  //     transform: scaleX(1)
-  //   .container, .container-fluid
-  //     margin: 0
-  //     padding: 0
-  //   &-menu
-  //     display: flex
-  //     flex-direction: column
-  //     background-color: white
-  //     li
-  //       padding: 0
-  //       transition: 0.3s
-  //       &:hover
-  //         background-color: white
-  //       a
-  //         font-family: 'Futura PT Light', sans-serif
-  //         font-weight: 700
-  //         border-bottom: 1px solid $main-color-d
-  //         display: flex
-  //         justify-content: center
-  //         padding: 10px
-  //         color: $main-color-d
-  //         font-size: 14px
-  //       ul
-  //         display: block
-  //         background-color: white
-  //         transform: scaleY(1)
-  //         position: relative
-  //         margin-top: 0
-  //         padding-left: 40px
-  //         li
-  //           padding: 0
   .wrapper
     position: relative
   .popup
@@ -378,21 +334,22 @@
           display: none
     &-card
       margin-top: 10px
-
-
-.footer
-  &-item
-    text-align: center
-  &-menu
-    li
-      padding: 10px 0
-  &_contacts
-    align-items: center
-  &__phone
-    align-self: center
-  &__time
-    align-self: center
-  &_socials
-    justify-content: center
-    margin-bottom: 10px
-    align-self: center
+      &_info
+        &__title
+          margin-top: 20px
+  .footer
+    &-item
+      text-align: center
+    &-menu
+      li
+        padding: 10px 0
+    &_contacts
+      align-items: center
+    &__phone
+      align-self: center
+    &__time
+      align-self: center
+    &_socials
+      justify-content: center
+      margin-bottom: 10px
+      align-self: center
