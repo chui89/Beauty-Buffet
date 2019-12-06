@@ -34,7 +34,6 @@ $(document).ready(function() {
     slidesToShow: 4,
     slidesToScroll: 4,
     asNavFor: '.products-card_img__main',
-    // dots: true,
     centerMode: true,
     focusOnSelect: true,
     arrows: false,
@@ -44,7 +43,33 @@ $(document).ready(function() {
   $('.products-card_similar__slider').slick({
     slidesToShow: 4,
     slidesToScroll: 4,
-    arrows: false
+    arrows: true,
+    prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-arrow-circle-left"></i></button>',
+    nextArrow: '<button type="button" class="slick-next"><i class="fas fa-arrow-circle-right"></i></button>',
+    responsive: [
+      // {
+      //   breakpoint: 1200,
+      //   settings: {
+      //     slidesToShow: 2,
+      //     slidesToScroll: 1
+      //   }
+      // },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 399,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      }
+
+    ]
   });
 
 });
