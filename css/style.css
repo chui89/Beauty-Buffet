@@ -655,6 +655,7 @@ img {
 
 .products-card_info__subtitle {
   margin-bottom: 30px;
+  color: #616161;
 }
 
 .products-card_info__option-block {
@@ -820,6 +821,22 @@ img {
 .products-card_similar__item__price i {
   font-size: 16px;
   color: #222;
+}
+
+.contacts_block__content {
+  margin-bottom: 30px;
+}
+
+.contacts_block__content p {
+  font-size: 18px;
+}
+
+.contacts_block__map {
+  margin-bottom: 30px;
+}
+
+.contacts_block__map iframe {
+  border: none;
 }
 
 .footer {
