@@ -29,20 +29,25 @@ $(document).ready(function() {
     arrows: false,
     fade: true,
     asNavFor: '.products-card_img__primary',
-    // draggable: false
   });
   $('.products-card_img__primary').slick({
     slidesToShow: 5,
     slidesToScroll: 1,
     asNavFor: '.products-card_img__main',
     swipeToSlide: true,
-    // centerMode: true,
     focusOnSelect: true,
     infinite: false,
-    // arrows: false,
-    prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-arrow-circle-left"></i></button>',
-    nextArrow: '<button type="button" class="slick-next"><i class="fas fa-arrow-circle-right"></i></button>',
-    // draggable: false
+    prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-arrow-left"></i></button>',
+    nextArrow: '<button type="button" class="slick-next"><i class="fas fa-arrow-right"></i></button>',
+    responsive: [
+      {
+        breakpoint: 767,
+        settings: {
+          // centerMode: true,
+          focusOnSelect: false,
+        }
+      },
+    ]
   });
 
   $('.products-card_similar__slider').slick({
@@ -52,13 +57,6 @@ $(document).ready(function() {
     prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-arrow-circle-left"></i></button>',
     nextArrow: '<button type="button" class="slick-next"><i class="fas fa-arrow-circle-right"></i></button>',
     responsive: [
-      // {
-      //   breakpoint: 1200,
-      //   settings: {
-      //     slidesToShow: 2,
-      //     slidesToScroll: 1
-      //   }
-      // },
       {
         breakpoint: 767,
         settings: {
@@ -73,7 +71,6 @@ $(document).ready(function() {
           slidesToScroll: 1,
         }
       }
-
     ]
   });
 
