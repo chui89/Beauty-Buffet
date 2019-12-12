@@ -47,7 +47,6 @@ img
   top: 50%
   right: 0
   transform: translateY(-50%)
-
 .fixed
   position: fixed // позицианируем чтобы исчез скролл
   width: 100% // чтобы верстка не складывалась по ширине
@@ -373,10 +372,16 @@ img
         cursor: pointer
       &__main
         &__item
+        .slick-current
+          img
+            border: 1px solid $main-clr-1 !important
       &__primary
         margin-top: 10px
         &__item
           margin: 0 5px
+        .slick-current
+          img
+            border: 1px solid $main-clr-1 !important
     &_info
       &__title
         margin-bottom: 10px
@@ -442,6 +447,10 @@ img
         justify-content: flex-start
         align-content: stretch
         align-items: stretch
+        &:hover
+          box-shadow: 0 6px 24px 0 rgba(47,47,47,.12)
+        &:hover .products-card_similar__item__title
+          color: $main-clr-2
         &__img
           width: 100%
         &__title

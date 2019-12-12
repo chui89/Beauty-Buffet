@@ -19,7 +19,8 @@ $(document).ready(function() {
     slidesToShow: 1,
     arrows: false,
     dots: true,
-    dotsClass: 'stocks-slider-dots'
+    dotsClass: 'stocks-slider-dots',
+    autoplay: true
   });
 
   $('.products-card_img__main').slick({
@@ -28,16 +29,20 @@ $(document).ready(function() {
     arrows: false,
     fade: true,
     asNavFor: '.products-card_img__primary',
-    draggable: false
+    // draggable: false
   });
   $('.products-card_img__primary').slick({
-    slidesToShow: 4,
-    slidesToScroll: 4,
+    slidesToShow: 5,
+    slidesToScroll: 1,
     asNavFor: '.products-card_img__main',
-    centerMode: true,
+    swipeToSlide: true,
+    // centerMode: true,
     focusOnSelect: true,
-    arrows: false,
-    draggable: false
+    infinite: false,
+    // arrows: false,
+    prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-arrow-circle-left"></i></button>',
+    nextArrow: '<button type="button" class="slick-next"><i class="fas fa-arrow-circle-right"></i></button>',
+    // draggable: false
   });
 
   $('.products-card_similar__slider').slick({
