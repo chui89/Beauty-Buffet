@@ -386,6 +386,10 @@ img {
   color: transparent;
 }
 
+.section {
+  position: relative;
+}
+
 .section:after {
   content: '';
   display: block;
@@ -995,6 +999,12 @@ img {
   .section-title {
     margin-top: 20px;
     margin-bottom: 20px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    display: block;
+    z-index: 2000;
+    background-color: #fff;
   }
   .section_title {
     border-bottom: 1px solid #FE999B;
@@ -1242,6 +1252,12 @@ img {
   .section-title {
     margin-top: 20px;
     margin-bottom: 20px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    display: block;
+    z-index: 2000;
+    background-color: #fff;
   }
   .section_title {
     border-bottom: 1px solid #f3166b;
