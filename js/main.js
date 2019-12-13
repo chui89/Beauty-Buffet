@@ -28,6 +28,7 @@ $(document).ready(function() {
     slidesToScroll: 1,
     arrows: false,
     fade: true,
+    infinite: false,
     asNavFor: '.products-card_img__primary',
   });
   $('.products-card_img__primary').slick({
