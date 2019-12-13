@@ -37,13 +37,13 @@ $(document).ready(function() {
     swipeToSlide: true,
     focusOnSelect: true,
     infinite: false,
+    swipeToSlide: true,
     prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-arrow-left"></i></button>',
     nextArrow: '<button type="button" class="slick-next"><i class="fas fa-arrow-right"></i></button>',
     responsive: [
       {
         breakpoint: 767,
         settings: {
-          // centerMode: true,
           focusOnSelect: false,
         }
       },
