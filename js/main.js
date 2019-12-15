@@ -39,6 +39,7 @@ $(document).ready(function() {
     focusOnSelect: true,
     infinite: false,
     swipeToSlide: true,
+    // centerMode: true,
     prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-arrow-left"></i></button>',
     nextArrow: '<button type="button" class="slick-next"><i class="fas fa-arrow-right"></i></button>',
     responsive: [
