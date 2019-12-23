@@ -239,7 +239,7 @@ img {
 }
 
 .nav-menu li:hover {
-  background-color: #007d92;
+  background-color: #f3166b;
 }
 
 .nav-menu li:hover > ul {
@@ -262,7 +262,7 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #FE999B;
+  background-color: #007d92;
   position: absolute;
   margin-top: 10px;
   list-style: none;
@@ -1127,11 +1127,11 @@ img {
     font-size: 14px;
   }
   .nav-menu li ul {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     background-color: white;
-    -webkit-transform: scaleY(1);
-            transform: scaleY(1);
-    position: relative;
+    position: absolute;
     margin-top: 0;
     padding-left: 40px;
   }
