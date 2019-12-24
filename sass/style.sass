@@ -50,6 +50,8 @@ img
 .fixed
   position: fixed // позицианируем чтобы исчез скролл
   width: 100% // чтобы верстка не складывалась по ширине
+.header-wrapp
+  position: relative
 .header
   margin-top: 30px
   font-family: 'Futura PT Demi', sans-serif
@@ -85,7 +87,7 @@ img
       font-family: 'Futura PT Book', sans-serif
   &_socials
     display: flex
-    flex-direction: column
+    // flex-direction: column
     align-items: flex-start
     a
       font-size: 14px
@@ -99,8 +101,13 @@ img
         margin-bottom: 5px
     img
       margin-right: 2px
-      width: 20px
-      height: 20px
+      width: 30px
+      height: 30px
+  &_call
+    a
+      display: flex
+      color: $main-clr-2
+      font-size: 34px
   &_bars
     a
       font-size: 34px
@@ -499,6 +506,13 @@ img
   background-color: #222
   &_logo
     text-align: left
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: stretch
+    height: 100%
+    &__policy
+      color: white
   &-title
   &_title
     font-family: 'Arizonia', cursive
@@ -512,8 +526,11 @@ img
   &-menu
     padding: 0
     list-style: none
+    display: flex
+    flex-wrap: wrap
     li
       transition: 0.3s
+      flex-basis: 50%
       &:hover > a:after
         transform: scaleX(1)
       a

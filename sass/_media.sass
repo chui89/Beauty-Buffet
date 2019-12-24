@@ -46,6 +46,8 @@
     position: relative
   .section
     border-bottom: none
+    &:after
+      display: none
     &-title
       margin-top: 0px
       margin-bottom: 20px
@@ -57,12 +59,6 @@
     &_title
       border-bottom: 1px solid $main-color
       font-family: 'Futura PT Light', sans-serif
-  .header-wrapp
-    position: sticky
-    top: 0
-    background-color: #fff
-    z-index: 2002
-
   .header
     margin-top: 10px
     position: sticky
@@ -97,9 +93,9 @@
     display: block
     z-index: 6
     position: absolute
-    top: 100%
+    top: 60px
     right: 0
-    transform: translateY(50%)
+    // transform: translateY(50%)
     transform: scaleX(0)
     transform-origin: right center 0
     transition: 0.3s
@@ -174,8 +170,12 @@
     opacity: 0.8
   .stocks
     padding-top: 10px
+    &:after
+      display: none
     &-title
       margin-top: 0px
+    &_title
+      font-family: 'Futura PT Light', sans-serif
     &-slider
       position: relative
       &_item
@@ -224,7 +224,7 @@
         &__link
           display: none
     &-card
-      margin-top: 0
+      margin-top: 0px
       padding-top: 10px
       &_info
         &__title
@@ -249,6 +249,8 @@
 @media (max-width: 399px)
   .section
     border-bottom: none
+    &:after
+      display: none
     &-title
       margin-top: 0px
       margin-bottom: 20px
@@ -260,11 +262,7 @@
     &_title
       border-bottom: 1px solid $main-clr-2
       font-family: 'Futura PT Light', sans-serif
-  .header-wrapp
-    position: sticky
-    top: 0
-    background-color: #fff
-    z-index: 2002
+  
   .header
     margin-top: 10px
     position: sticky
@@ -273,7 +271,7 @@
     display: block
     z-index: 2004
     &__title
-      font-size: 36px
+      font-size: 32px
     &__subtitle
       display: none
     &_bars
@@ -299,9 +297,9 @@
     display: block
     z-index: 6
     position: absolute
-    top: 100%
+    top: 50px
     right: 0
-    transform: translateY(50%)
+    transform: translateY(-50%)
     transform: scaleX(0)
     transform-origin: right center 0
     transition: 0.3s
@@ -377,8 +375,12 @@
     opacity: 0.8
   .stocks
     padding-top: 10px
+    &:after
+      display: none
     &-title
       margin-top: 0px
+    &_title
+      font-family: 'Futura PT Light', sans-serif
     &-slider
       position: relative
       &_item
@@ -427,7 +429,8 @@
         &__link
           display: none
     &-card
-      margin-top: 10px
+      margin-top: 0px
+      padding-top: 10px
       &_info
         &__title
           margin-top: 20px
