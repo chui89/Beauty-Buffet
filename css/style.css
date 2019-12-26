@@ -975,8 +975,9 @@ img {
       align-self: flex-end;
 }
 
-.footer_socials:nth-child(odd) i {
+.footer_socials:nth-child(odd) a {
   cursor: pointer;
+  color: #222;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -993,7 +994,7 @@ img {
           align-items: center;
 }
 
-.footer_socials:nth-child(odd) i:hover {
+.footer_socials:nth-child(odd) a:hover {
   background-color: grey;
 }
 
