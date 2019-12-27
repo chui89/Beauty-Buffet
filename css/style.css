@@ -679,14 +679,39 @@ img {
   color: #222;
 }
 
-.products-card_info__price {
+.products-card_info__price i {
+  font-size: 18px;
+}
+
+.products-card_info__price-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.products-card_info__price__wrong {
   margin-bottom: 30px;
   font-size: 20px;
   font-weight: 700;
+  font-family: 'Futura PT Demi', sans-serif;
+  color: #ff5575;
+  margin-right: 10px;
 }
 
-.products-card_info__price i {
-  font-size: 18px;
+.products-card_info__price__sale {
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Futura PT Demi', sans-serif;
+  color: #222;
+}
+
+.products-card_info__price__sale i {
+  font-size: 16px;
+  color: #222;
 }
 
 .products-card_info__description:before {
@@ -827,6 +852,35 @@ img {
 }
 
 .products-card_similar__item__price i {
+  font-size: 16px;
+  color: #222;
+}
+
+.products-card_similar__item__price-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.products-card_similar__item__price__wrong {
+  font-size: 18px;
+  font-weight: 700;
+  font-family: 'Futura PT Demi', sans-serif;
+  color: #ff5575;
+  margin-right: 10px;
+}
+
+.products-card_similar__item__price__sale {
+  font-size: 18px;
+  font-weight: 700;
+  font-family: 'Futura PT Demi', sans-serif;
+  color: #222;
+}
+
+.products-card_similar__item__price__sale i {
   font-size: 16px;
   color: #222;
 }

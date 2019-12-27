@@ -404,11 +404,27 @@ img
       &__option-value
         color: $section-header
       &__price
-        margin-bottom: 30px
-        font-size: 20px
-        font-weight: 700
         i
           font-size: 18px
+        &-block
+            display: flex
+            align-items: center
+        &__wrong
+          margin-bottom: 30px
+          font-size: 20px
+          font-weight: 700
+          font-family: 'Futura PT Demi', sans-serif
+          color: $sale-clr
+          margin-right: 10px
+        &__sale
+          margin-bottom: 30px
+          font-size: 20px
+          font-weight: 700
+          font-family: 'Futura PT Demi', sans-serif
+          color: #222
+          i
+            font-size: 16px
+            color: #222
       &__description
         &:before
           margin-bottom: 10px
@@ -490,6 +506,23 @@ img
           i
             font-size: 16px
             color: #222
+          &-block
+            display: flex
+            align-items: center
+          &__wrong
+            font-size: 18px
+            font-weight: 700
+            font-family: 'Futura PT Demi', sans-serif
+            color: $sale-clr
+            margin-right: 10px
+          &__sale
+            font-size: 18px
+            font-weight: 700
+            font-family: 'Futura PT Demi', sans-serif
+            color: #222
+            i
+              font-size: 16px
+              color: #222
 .contacts
   &_block
     &__content
