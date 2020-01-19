@@ -904,7 +904,8 @@ img {
 .footer {
   margin-top: 30px;
   padding: 20px 0;
-  background-color: #222;
+  background-image: -webkit-gradient(linear, left top, right top, from(#007d92), to(#f3166b));
+  background-image: linear-gradient(90deg, #007d92, #f3166b);
 }
 
 .footer_logo {
